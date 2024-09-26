@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery a {
+            display: block;
+            width: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: #fff;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .credit {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <a href="images/image1.jpg" target="_blank">
+            <img src="images/image1.jpg" alt="Image 1">
+        </a>
+        <a href="images/image2.jpg" target="_blank">
+            <img src="images/image2.jpg" alt="Image 2">
+        </a>
+        <a href="images/image3.jpg" target="_blank">
+            <img src="images/image3.jpg" alt="Image 3">
+        </a>
+        <!-- Add more images as needed -->
+    </div>
+    <div class="credit">
+        <p>Images sourced from [source name].</p>
+    </div>
+</body>
+</html>
